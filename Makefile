@@ -4,6 +4,7 @@ CFLAGS := -Wall -Wextra -Werror
 SOURCE :=	ft_strrchr.c \
 			ft_putstr.c \
 			ft_strcmp.c \
+			ft_freetab.c \
 			ft_memcpy.c \
 			ft_memmove.c \
 			ft_strncpy.c \

@@ -104,4 +104,5 @@ t_list					*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list					*ft_searchlst(t_list *lst, int fd);
 void					ft_appendlst(t_list *lst, char *buf, int fd);
 void					ft_strrev(char *str);
+void					ft_freetab(char **);
 #endif
