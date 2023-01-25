@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qmattor <qmattor@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bopok <bopok@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/03 13:48:22 by qmattor           #+#    #+#             */
-/*   Updated: 2020/03/10 19:23:59 by qmattor          ###   ########.fr       */
+/*   Updated: 2023/01/18 15:45:25 by bopok            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 # define FT_LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+
+#define BASE_10 "0123456789"
+#define BASE_2 "01"
+#define BASE_16 "0123456789ABCDEF"
+#define BASE_8 "01234567"
 
 typedef struct			s_list
 {
@@ -45,6 +50,7 @@ int						ft_isdigit(int c);
 int						ft_isprint(int c);
 int						ft_iswhtspc(char c);
 char					*ft_itoa(int n);
+char					*ft_itoab(unsigned long n, char *dstr);
 void					*ft_memalloc(size_t size);
 void					*ft_memccpy(void *dest, void *src, int n, size_t n2);
 void					*ft_memchr(const void *src, int c, size_t n);
@@ -95,7 +101,7 @@ int						ft_toupper(int c);
 void					ft_wowthatsgross(char **tab, int *z,
 						const char *s, char c);
 t_list					*ft_lstnew(void const *content, size_t content_size);
-void					ft_lstadd(t_list **alst, t_list *new);
+void					ft_lstadd(t_list **alst, t_list *n);
 void					ft_lstdelone(t_list **alst,
 						void (*del)(void *, size_t));
 void					ft_lstiter(t_list *lst, void (*f)(t_list *elem));

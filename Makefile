@@ -63,7 +63,6 @@ SOURCE :=	ft_strrchr.c \
 			ft_lstadd.c\
 			ft_lstiter.c\
 			ft_lstmap.c\
-			ft_lstdel.c\
 			ft_lstdelone.c\
 			ft_appendlst.c\
 			ft_searchlst.c\
@@ -71,7 +70,8 @@ SOURCE :=	ft_strrchr.c \
 			ft_benull.c\
 			ft_arrylstdel.c\
 			ft_arrylstnew.c\
-			ft_strrev.c
+			ft_strrev.c\
+			ft_itoab.c
 
 OBJECTS := $(patsubst %.c,%.o,$(SOURCE))
 
